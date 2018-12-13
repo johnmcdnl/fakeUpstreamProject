@@ -4,19 +4,19 @@ pipeline {
 
     stage('Build') {
       parallel {
-        stage('Build') {
+        stage('Build 1') {
           steps {
             echo 'Build'
           }
         }
-        stage('') {
+        stage('Build 2') {
           steps {
             echo 'Another Branch!'
           }
         }
       }
     }
-    stage('Test') {
+    stage('Test 1') {
       steps {
         echo 'Test'
       }
