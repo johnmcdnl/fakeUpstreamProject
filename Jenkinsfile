@@ -4,12 +4,12 @@ pipeline {
 
     stage('Build') {
       parallel {
-        stage('Build') {
+        stage('Build Stage 1') {
           steps {
             echo 'Build 1'
           }
         }
-        stage('') {
+        stage('Build Stage 2') {
           steps {
             echo 'Build 2'
           }
@@ -18,12 +18,12 @@ pipeline {
     }
     stage('Test') {
      parallel {
-        stage('Test') {
+        stage('Test Stage 1') {
           steps {
             echo 'Test 1'
           }
         }
-        stage('') {
+        stage('Test Stage 2') {
           steps {
             echo 'Test 2'
           }
