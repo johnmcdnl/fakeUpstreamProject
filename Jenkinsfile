@@ -34,7 +34,7 @@ pipeline {
     parallelsAlwaysFailFast()
   }
   triggers {
-    cron('*/5 * * * *')
+    cron('*/3 * * * *')
     pollSCM('* * * * *')
   }
 }
